@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tìm lớp học"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtCodeClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLines="1"
+        android:layout_toLeftOf="@id/btnSearch"
+        android:hint="Nhập mã lớp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/edtCodeSecure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number|text"
+        android:lines="1"
+        android:maxLines="1"
+        android:text=""
+        android:layout_toLeftOf="@id/btnSearch"
+        android:hint="Nhập mã bảo vệ (nếu có)"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button_login"
+        android:text="Vào lớp"
+        android:textColor="#EEEEEE" />
+
+</LinearLayout>

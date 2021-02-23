@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|start"
+        android:layout_toStartOf="@id/imgBtnDownLoad"
+        android:layout_alignBottom="@id/imgBtnDownLoad"
+        android:textColor="#101010"
+        android:text="HaLinhIT"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnDownLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_download"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitEnd"
+        style="?android:attr/borderlessButtonStyle"/>
+</RelativeLayout>

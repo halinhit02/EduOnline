@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/layoutCorrect"
+        android:layout_alignBottom="@id/layoutIncorrect"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:gravity="center"
+        android:text="Câu 1"
+        android:textColor="#222222"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/layoutCorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/txtQuestion">
+
+        <TextView
+            android:id="@+id/txtNumCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="9"
+            android:textColor="#222222"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgCorrectt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txtNumCorrect"
+            android:layout_alignStart="@id/txtNumCorrect"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/txtNumCorrect"
+            android:src="@drawable/ic_correct" />
+
+        <SeekBar
+            android:id="@+id/seekCorrect"
+            style="@style/SeekBarCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:clickable="false"
+            android:layout_alignTop="@id/txtNumCorrect"
+            android:layout_alignBottom="@id/txtNumCorrect"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/imgCorrectt"
+            android:progress="50"
+            android:splitTrack="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutIncorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutCorrect"
+        android:layout_alignStart="@id/layoutCorrect"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/txtNumInCorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="9"
+            android:textColor="#222222"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgInCorrectt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/txtNumInCorrect"
+            android:layout_alignStart="@id/txtNumInCorrect"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/txtNumInCorrect"
+            android:src="@drawable/ic_incorrect" />
+
+        <SeekBar
+            android:id="@+id/seekIncorrect"
+            style="@style/SeekBarIncorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:clickable="false"
+            android:layout_alignBottom="@id/txtNumInCorrect"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/imgInCorrectt"
+            android:progress="10"
+            android:splitTrack="false" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/layoutClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtNameTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLength="40"
+            android:maxLines="1"
+            android:textColor="#101010"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutClass"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Điểm số"
+                android:textColor="#101010"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#C90B0B"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardinfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/cardScore"
+        android:layout_alignBottom="@id/cardScore"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/cardScore"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/txtCorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/correct"
+                android:textAlignment="textStart"
+                android:textColor="#089ABE"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtIncorrect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="@string/incorrect"
+                android:textAlignment="textStart"
+                android:textColor="#B60606"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtTimeDone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/time"
+                android:textAlignment="textStart"
+                android:textColor="#101010"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReturn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#EEEEEE"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="Câu"
+            android:layout_marginEnd="20dp"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAnswerTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:text="Đáp án"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/txtQuestion"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAnswerUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="Bạn chọn"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/txtAnswerTask"
+            app:layout_constraintEnd_toStartOf="@id/txtResult"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả"
+            android:textColor="#1B1B1B"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layoutnote"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnViewFile"
+        android:layout_alignStart="@id/cardScore"
+        android:background="@drawable/custom_button_login"
+        android:layout_below="@id/cardinfor"
+        android:text="Quay về"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnRework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btnViewFile"
+        android:layout_toEndOf="@id/btnReturn"
+        android:layout_toStartOf="@id/btnViewFile"
+        android:background="@drawable/custom_button_login"
+        android:layout_below="@id/cardinfor"
+        android:text="Làm lại"
+        android:layout_marginStart="20dp"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnViewFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@id/cardinfor"
+        android:layout_alignEnd="@id/cardinfor"
+        android:background="@drawable/custom_button_login"
+        android:text="Xem đề"
+        android:textAllCaps="false"
+        android:textColor="#FAFAFA"
+        android:textSize="16sp" />
+</RelativeLayout>

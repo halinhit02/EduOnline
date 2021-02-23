@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutVerify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11BCC4"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Xác minh"
+        android:textColor="#F0F0F0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtVerify"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/imgVerify"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:src="@drawable/verify"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_Verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Vui lòng nhập mã xác minh được gửi tới 0839707312 để tiếp tục."
+                android:textAlignment="center"
+                android:textColor="#1F1F1F"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgVerify" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_Verify">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNumVerify"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#E7E7E7"
+                    android:fontFamily="@font/roboto"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:textAlignment="center"
+                    android:textColor="#1F1F1F"
+                    android:textSize="22sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnReCode"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp"
+                android:text="@string/txtRequest"
+                android:textAllCaps="false"
+                android:textColor="#0A74C5"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@id/btnConfirm"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutEdt" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/custom_button_login"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnReCode" />
+
+            <ProgressBar
+                android:id="@+id/verifyProgress"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_margin="20dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/btnConfirm"
+                app:layout_constraintEnd_toEndOf="@id/btnConfirm"
+                app:layout_constraintTop_toTopOf="@id/btnConfirm" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/txtVerify"
+        android:layout_marginTop="100dp"
+        android:background="#F8FFFF" />
+</RelativeLayout>

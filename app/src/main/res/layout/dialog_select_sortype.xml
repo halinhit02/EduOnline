@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btnSerialUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Câu từ đầu đến cuối"
+        android:background="@drawable/custom_btn_sort"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnSerialDown"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_btn_sort"
+        android:text="Câu từ cuối lên đầu"/>
+
+    <Button
+        android:id="@+id/btnCorrectUp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_btn_sort"
+        android:text="lượt đúng từ nhỏ đến lớn"/>
+
+    <Button
+        android:id="@+id/btnIncorrectUp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:background="@drawable/custom_btn_sort"
+        android:text="lượt sai từ nhỏ đến lớn"/>
+
+</LinearLayout>

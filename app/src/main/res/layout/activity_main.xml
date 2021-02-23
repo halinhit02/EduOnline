@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnCreateClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Tạo lớp mới"
+            android:textAllCaps="false"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSearchClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_btn"
+            android:drawableLeft="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Tìm lớp"
+            android:textAllCaps="false"
+            android:textColor="#FAFAFA"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/noticeClass"
+        android:textAlignment="center"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layoutBtn" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerClass"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNotice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

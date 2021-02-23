@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/txtScore"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@id/imgBtnEdit"
+        android:maxLines="1"
+        android:lines="1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#0F0F0F"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitEnd"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:src="@drawable/ic_edit"/>
+
+    <TextView
+        android:id="@+id/txtNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textColor="#BB440B"/>
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="26sp"
+        android:textColor="#DA0C0C"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtTimeDone"
+        android:layout_below="@id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtDateCreate"
+        android:layout_below="@id/txtTimeDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/txtDateFinish"
+        android:layout_below="@id/txtDateCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtDateCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#068DCF" />
+
+</RelativeLayout>

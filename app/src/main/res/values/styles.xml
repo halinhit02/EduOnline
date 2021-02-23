@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#07A7A7</item>
+        <item name="colorPrimaryDark">#048D84</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppBaseTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#07A7A7</item>
+        <item name="colorPrimaryDark">#048D84</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#09B9B9</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppBaseTheme.NoActionBar">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <item name="editTextStyle">@style/RobotoEditTextStyle</item>
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
+        <item name="editTextStyle">@style/RobotoEditTextStyle</item>
+    </style>
+
+    <style name="RobotoEditTextStyle" parent="android:Widget.EditText">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="RobotoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="SeekBarCorrect" parent="android:Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_seekbar_correct</item>
+        <item name="android:minHeight">150dp</item>
+        <item name="android:maxHeight">15dp</item>
+        <item name="android:thumbOffset">0dp</item>
+    </style>
+
+    <style name="SeekBarIncorrect" parent="android:Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/custom_seekbar_incorrect</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+        <item name="android:thumbOffset">0dp</item>
+    </style>
+</resources>

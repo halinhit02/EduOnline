@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="HaLinhIT"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/imgBtnInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitEnd"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_info"/>
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Mã lớp: "/>
+</RelativeLayout>

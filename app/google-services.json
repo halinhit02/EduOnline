@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "226781275474",
+    "firebase_url": "https://eduonline-1dfe1.firebaseio.com",
+    "project_id": "eduonline-1dfe1",
+    "storage_bucket": "eduonline-1dfe1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226781275474:android:ac1b1c7171ea128cd2468b",
+        "android_client_info": {
+          "package_name": "com.halinhit.eduonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226781275474-jj5b2biqf0uidbvm2uoqb71t8kjqlird.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.halinhit.eduonline",
+            "certificate_hash": "7539596a107479e33c0f90cfc725d49da034da19"
+          }
+        },
+        {
+          "client_id": "226781275474-l46gq06o1thm0q0o9tsbv7mlasg7gkgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVbBEyLGPp7iKvLrhBR5tp8yI81BeJ3uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226781275474-l46gq06o1thm0q0o9tsbv7mlasg7gkgf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

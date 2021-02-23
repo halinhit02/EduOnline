@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_toStartOf="@id/imgBtnDelete"
+        android:lines="1"
+        android:maxLength="25"
+        android:maxLines="1"
+        android:textColor="#101010"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imgBtnDelete"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_deletemember" />
+
+    <TextView
+        android:id="@+id/txtContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNameUser"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/imgNotifi"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/txtContent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/txtDateCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgNotifi"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:textAlignment="textEnd"
+        android:textColor="#101010"
+        android:textSize="16sp" />
+</RelativeLayout>
